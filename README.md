@@ -2,6 +2,7 @@
 
 An AI-powered financial analysis chatbot that lets you query SEC EDGAR 10-K data, compute accounting ratios, and generate charts — all through a conversational interface.
 
+<img src="ratiolens_image.png" width="450"/>
 ---
 
 ## What it does
@@ -26,7 +27,9 @@ User → Streamlit UI
 ```
 
 The supervisor uses LangGraph with `InMemorySaver` for conversation memory across a session. Agents are called sequentially (not in parallel).
+The supervisor filters request to make sure that these are related to the project, not missused of the llms.
 
+<img src="langgraph_diagram.png" width="600"/>
 ---
 
 ## Project structure
