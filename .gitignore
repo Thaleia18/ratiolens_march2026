@@ -1,0 +1,7 @@
+.env
+__pycache__/
+.vscode/
+*.pyc
+not_used/
+agent1.ipynb
+data_test.ipynb
